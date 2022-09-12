@@ -19,3 +19,12 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: s3_dbt_model
+    description: "A testing dbt model"
+    columns:
+      - name: _line
+        description: "s3_dbt_model added to test"
+        tests:
+          - unique
+          - not_null
