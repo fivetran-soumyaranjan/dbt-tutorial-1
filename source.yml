@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: s3.soumya_test_connector
+    tables:
+      - name: soumya_test_connector
