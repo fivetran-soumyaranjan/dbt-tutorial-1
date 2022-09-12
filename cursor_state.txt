@@ -1,0 +1,836 @@
+{
+  "cursor": {
+    "file": "mysql-bin-changelog.116691",
+    "position": 2152252
+  },
+  "encryptedKey": null,
+  "gtidCursor": null,
+  "lastConfigsFetchTime": "2022-09-12T16:07:55.191248Z",
+  "lastSycedBinlogFile": {
+    "key": "mysql-bin-changelog.116566",
+    "value": "2022-09-12T16:19:25.378625Z"
+  },
+  "slaveStatus": null,
+  "tables": {
+    "sosdb.transbatch": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:08.758Z",
+      "teleportStorageId": "cfe088d9-a82b-41a6-843a-487682374bc8",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.discountlocation": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:06:29.018Z",
+      "teleportStorageId": "2f173ffa-a6f4-412b-9cf0-284e7f73a95d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.discountsales": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T00:28:36.445Z",
+      "teleportStorageId": "18774342-d1fc-4098-9798-f45d3a8c76e3",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salesdetail": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:08:47.458Z",
+      "teleportStorageId": "b4c58be1-de97-4e51-b8e2-2c1a9e26dcf7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.middid": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:31.204Z",
+      "teleportStorageId": "43208db2-72cd-417b-bee0-7dfada4d60b8",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salescmr": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-08T06:32:34.931Z",
+      "teleportStorageId": "83d3c94f-c500-45a1-b833-e48ddd5a7f1c",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.role": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:03.927Z",
+      "teleportStorageId": "9648d4a2-7692-4f75-a9c9-68f8e72e59ba",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.monitorlog": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T23:44:09.650Z",
+      "teleportStorageId": "6d64e838-4ecb-47ab-bafb-946dcbb8ff43",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salespayment": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-09T16:33:03.085Z",
+      "teleportStorageId": "e22b5f87-9d57-48a7-9de4-f6f85daa7cb2",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketaccountevents": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:11:29.574Z",
+      "teleportStorageId": "3f30cfc5-5aa0-41ae-abd0-49c5336604e2",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.playlist": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:20.514Z",
+      "teleportStorageId": "5b8389ea-004a-425c-9052-34f01fb7e23c",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.kiosk": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:56.922Z",
+      "teleportStorageId": "51839345-803c-47ac-9014-aa1e8eecaaa2",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.processqueue": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:03.714Z",
+      "teleportStorageId": "2012360e-d96b-44ff-b7f4-6e340359d108",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.stockwellprivacy": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:09.554Z",
+      "teleportStorageId": "afd15147-8637-4279-8dd4-538800875945",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.gmaledger": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T21:28:02.947Z",
+      "teleportStorageId": "d53c859d-9dbf-4a6c-bc92-d60f3a1c9f7e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salesheader": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-09T01:37:17.628Z",
+      "teleportStorageId": "9b69349c-d3ad-4ac8-9daf-1e77e32edf6d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.pickuplocation": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:03.110Z",
+      "teleportStorageId": "aada8389-2f2e-49a7-95bb-758f7f026442",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.topoff": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:11.312Z",
+      "teleportStorageId": "8aa6db5a-3e9d-4f5d-8c21-ee560dfabd1e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.kioskcashout": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:22:17.670Z",
+      "teleportStorageId": "148844c6-9155-40f3-9cdb-bb8ba77075ae",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.route": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:04.342Z",
+      "teleportStorageId": "ed9aae2d-8f7b-4e5a-9199-8d886dcdc936",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.g2converthistory": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:42.934Z",
+      "teleportStorageId": "f400d2fc-f698-4b33-ac26-c9e94865465f",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.nationalaccountruledetail": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:01.554Z",
+      "teleportStorageId": "47488439-3efd-4ff9-926c-1719f811ff93",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.guestpass": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:14:40.378Z",
+      "teleportStorageId": "7dcd99f2-f6fa-4381-a967-2e3eeedd525a",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.vdiuserkey": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:05.025Z",
+      "teleportStorageId": "73c2a415-18d0-4d9a-8a5b-e93f1c0f706e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.userinvfilter": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:07:28.162Z",
+      "teleportStorageId": "e6eead69-189d-4af0-bee8-3f550c73f6cc",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.badscan": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T22:18:14.277Z",
+      "teleportStorageId": "7f175641-dbb3-4ecc-8781-a0ee035c588c",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.devicehistory": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:08:08.274Z",
+      "teleportStorageId": "cf6388e1-76a6-44bd-a53e-55c0d0b744c9",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.product": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:35:51.982Z",
+      "teleportStorageId": "e83ef640-43bb-40ec-b660-cdda6a587745",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.productuserkey": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:06:51.270Z",
+      "teleportStorageId": "a98e7e31-4333-4db9-9c24-7aded48a2611",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.userinvfiltercate": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:18:00.869Z",
+      "teleportStorageId": "1ed4955e-13b1-4168-a566-930f9329f3df",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.systemuser": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:23.942Z",
+      "teleportStorageId": "a03b0124-95e0-4719-bcac-ed976762ea79",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.productlocation": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T04:15:10.930Z",
+      "teleportStorageId": "1b9b2e1c-bbc2-44b5-98b1-d8a5a51bddce",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.invitem": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T08:03:48.555Z",
+      "teleportStorageId": "955c6aba-c798-44d2-a8b5-cddc00252d83",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.eft": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:06:38.866Z",
+      "teleportStorageId": "cc3c7f3c-f8d1-49fb-9a5c-fbab395ed7df",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.corporate": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:01.706Z",
+      "teleportStorageId": "d5ec86e9-4d79-4295-a0f1-0219d35dbf9f",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.percentagefilled": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:51:47.949Z",
+      "teleportStorageId": "e507725f-33f0-414a-8000-b673fa25e158",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.pricingrec": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T12:31:06.988Z",
+      "teleportStorageId": "61895159-2202-4d61-b6a3-3a54327b07b7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketaccount": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T21:46:17.322Z",
+      "teleportStorageId": "d7f145cf-2619-448f-b4bf-886352e68e8b",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.client": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:05.445Z",
+      "teleportStorageId": "9818384b-69fe-4e47-b9ab-ba7c76539909",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.productmoves": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T10:51:50.269Z",
+      "teleportStorageId": "ea11926c-dd33-44d1-ba99-9c082bb41e09",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.taxname": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:04.824Z",
+      "teleportStorageId": "471b5a10-48fc-4d90-86b2-76c0486ce26b",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.balancesnapshot": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:33:37.850Z",
+      "teleportStorageId": "d6e74ce9-f176-42fa-9221-d3750e7594e6",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salespaymentdetail": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:15:26.181Z",
+      "teleportStorageId": "e39a655a-c8e0-454e-9ab5-5645cb9b2fff",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketcard": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:25.778Z",
+      "teleportStorageId": "b3d9f818-c137-4c66-b985-553f6e2cb81e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salesitemmodifier": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T03:09:34.348Z",
+      "teleportStorageId": "e3b380a5-d722-4fe8-8850-b61156495ba7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.payrolldeductgroup": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:01.882Z",
+      "teleportStorageId": "0092385e-8518-4a8e-9aab-6e99f0e97a3f",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketaccountidentifier": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T05:59:43.558Z",
+      "teleportStorageId": "633358a8-7315-4dc6-9aea-2607ed7a29fb",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.attach": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:16.930Z",
+      "teleportStorageId": "cf45c62e-d082-4ffe-af6b-f8adf64d40ca",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.invheader": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:27:10.502Z",
+      "teleportStorageId": "eb112c87-5b27-4430-8e52-fb5d227ecfee",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.org": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:05.638Z",
+      "teleportStorageId": "c409c703-e898-458e-a9ab-34535db99019",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.playlisttalker": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:55.898Z",
+      "teleportStorageId": "a5e35248-bf99-4244-93c1-e530e3c11d7e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.transhistory": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-08T08:41:08.061Z",
+      "teleportStorageId": "c295624b-28a3-406d-8ac3-edf77df4121d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.gmapointsledger": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T02:54:56.100Z",
+      "teleportStorageId": "31f6d4e5-2076-4089-b024-6c95600edb7b",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.egiftcardusage": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:01.957Z",
+      "teleportStorageId": "8e9c036b-4ab0-45c4-88a3-d38ebf304379",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.cash": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.035Z",
+      "teleportStorageId": "4035d4d8-23ed-4c64-a59b-fb3be0c31b84",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.discountitem": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:09:42.411Z",
+      "teleportStorageId": "96e14524-759a-41f2-a282-9ec6750721c3",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketaccountbalance": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:52:41.284Z",
+      "teleportStorageId": "0721505b-9bc8-49fc-ad07-6e881a2a3c68",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.cancelpayment": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:14:16.094Z",
+      "teleportStorageId": "b9be63be-80de-48a1-a7e0-ebcfee26dba6",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.simpsoncorp": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.305Z",
+      "teleportStorageId": "115075c1-86b0-4a7f-8ea4-49baa3c360cb",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.discountheader": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:12.027Z",
+      "teleportStorageId": "0a2263e0-0158-4736-bba8-8ab60a82bdaf",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.commercial": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:06:15.865Z",
+      "teleportStorageId": "25e3cf7b-05c1-411e-be35-b4661ddec023",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketaccountimport": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.398Z",
+      "teleportStorageId": "49733efe-0948-4567-b498-abb2e4ee6392",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.cancelheader": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T05:48:16.878Z",
+      "teleportStorageId": "658dee4f-7317-4585-9f79-a9964c113a2a",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.pantrygroup": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.499Z",
+      "teleportStorageId": "73de6e48-1380-4660-98e3-e3d55d08d87b",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketserviceaccount": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.591Z",
+      "teleportStorageId": "d16ddbf8-ab05-46fe-8692-82e884cb7b9d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.nationalaccountexception": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:03.330Z",
+      "teleportStorageId": "ea11a7ad-c8c4-45cc-aa85-ec19048a103d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.vdimapping": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T21:53:44.585Z",
+      "teleportStorageId": "dea64f08-05d7-4169-8fc3-3ded2ac50227",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.eftbatch": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T00:05:37.951Z",
+      "teleportStorageId": "562471aa-114e-4fd4-ac6b-9ed5e112c37e",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.device": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.774Z",
+      "teleportStorageId": "d0f5c7e3-20b9-404e-b00e-cc185ccd24d7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.stockout": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T21:36:56.289Z",
+      "teleportStorageId": "9031308f-c490-4ec1-b249-21fda9c26b18",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.userinvprdloc": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T01:38:03.192Z",
+      "teleportStorageId": "de4a9fc6-4ced-43aa-a82a-0dd7a9634dd5",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.egiftcardcreate": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.862Z",
+      "teleportStorageId": "b5120757-3dc1-4370-8c59-a7bf75853802",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.location": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:06:17.094Z",
+      "teleportStorageId": "1290d90e-d1f5-4a91-b54e-8b183bd4b291",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.provisionhistory": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:06.862Z",
+      "teleportStorageId": "b0a29491-b641-4133-a0fc-6f7543519073",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.productinv": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T23:00:01.186Z",
+      "teleportStorageId": "536f3d38-8d6b-4204-97dd-5ebf08094844",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.lookupstr": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:03.541Z",
+      "teleportStorageId": "31fb8d65-0e4c-40f1-bb58-f01f8e91485f",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.loyaltyhistory": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:09:10.346Z",
+      "teleportStorageId": "2e773f66-7ecc-41d8-9ce1-94c6746011b2",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.upc": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:38:37.181Z",
+      "teleportStorageId": "de8458ca-e45f-4e3c-a08c-68ff54be2b91",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.marketuser": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:27.158Z",
+      "teleportStorageId": "c41e3e2c-8f03-471b-ad40-2dbf9f9eb7fd",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.sfecfg": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:25:56.681Z",
+      "teleportStorageId": "62bf4c93-3f52-4fb0-a5e9-b19f5daa5f09",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.auditlog": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T21:01:44.178Z",
+      "teleportStorageId": "4c16e92c-cb6d-4120-81ea-cfa9e664bfa1",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.orgstr": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:36.630Z",
+      "teleportStorageId": "d30b91e5-e1fc-4738-b2e7-0df484fa7159",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.vdiprovider": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:02.927Z",
+      "teleportStorageId": "56bd53d0-9eb8-4be6-86a9-68c3f9ba14fd",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.eftadjustment": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:05:32.362Z",
+      "teleportStorageId": "25ea20e2-4c11-47e8-801c-536f7301e5b7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.backgroundmsg": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:10:24.626Z",
+      "teleportStorageId": "b19278ed-5060-4227-9739-ef4883edeee7",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.systemuserorgloc": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T21:11:09.055Z",
+      "teleportStorageId": "94c739d0-ada5-4bd8-b785-d51c8dde980a",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.cancelitem": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-07T07:46:27.962Z",
+      "teleportStorageId": "a7bc2a0e-1774-4d34-8b1d-15012941767d",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.valetdiscountitem": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:28:43.734Z",
+      "teleportStorageId": "6913a476-8485-4ebb-be76-650618a5dc52",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.systemuserorg": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:08:30.595Z",
+      "teleportStorageId": "61ea9311-4792-4c7a-8d15-6adbc753b34c",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.salesitem": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-10T05:37:29.316Z",
+      "teleportStorageId": "f8713444-1d22-487e-8563-c0d7090cc7ff",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    },
+    "sosdb.pointssnapshot": {
+      "importBeginTime": "2022-09-06T20:05:01.316Z",
+      "importFinished": true,
+      "keyCursor": null,
+      "lastProgressAt": "2022-09-06T20:13:08.917Z",
+      "teleportStorageId": "080e7aea-c912-4f05-98b3-eb73431366f6",
+      "totalRows": null,
+      "wasSoftDeleted": true
+    }
+  },
+  "transactionCounter": null
+}
