@@ -37,3 +37,21 @@ models:
         tests:
           - unique
           - not_null          
+
+  - name: s3_source_model
+    description: "A starter dbt model"
+    columns:
+      - name: _line
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null           
+
+  - name: s3_source_model_dup
+    description: "A starter dbt model"
+    columns:
+      - name: _line
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null           
