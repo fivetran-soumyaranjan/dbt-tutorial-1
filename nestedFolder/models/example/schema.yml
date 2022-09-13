@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
+  - name: nested_my_first_dbt_model
     description: "A starter dbt model"
     columns:
       - name: id
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
+  - name: nested_my_second_dbt_model
     description: "A starter dbt model"
     columns:
       - name: id
@@ -19,7 +19,7 @@ models:
           - unique
           - not_null
 
-  - name: my_third_dbt_model
+  - name: nested_s3_source_model
     description: "A starter dbt model"
     columns:
       - name: id
