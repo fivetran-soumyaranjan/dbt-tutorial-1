@@ -28,3 +28,12 @@ models:
         tests:
           - unique
           - not_null          
+
+  - name: inside_nested_folder_part2
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
