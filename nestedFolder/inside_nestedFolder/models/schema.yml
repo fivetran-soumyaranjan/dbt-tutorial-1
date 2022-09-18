@@ -37,3 +37,12 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: outside_model
+    description: "A outside model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null          
