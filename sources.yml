@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: fivetran_mysql2_us_sys
+    tables:      
+      - name: sys_config
