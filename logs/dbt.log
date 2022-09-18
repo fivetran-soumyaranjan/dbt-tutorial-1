@@ -1,0 +1,187 @@
+2022-09-18 16:49:44.003385 (MainThread): Running with dbt=0.21.1
+2022-09-18 16:49:44.459805 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 16:49:44.461865 (MainThread): Tracking: tracking
+2022-09-18 16:49:44.462598 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105941640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047dfe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059208b0>]}
+2022-09-18 16:49:44.475478 (MainThread): Partial parsing not enabled
+2022-09-18 16:49:44.490808 (MainThread): Parsing macros/catalog.sql
+2022-09-18 16:49:44.493156 (MainThread): Parsing macros/adapters.sql
+2022-09-18 16:49:44.531121 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 16:49:44.534978 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 16:49:44.539701 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 16:49:44.541077 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 16:49:44.544511 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 16:49:44.553044 (MainThread): Parsing macros/core.sql
+2022-09-18 16:49:44.556662 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 16:49:44.563563 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 16:49:44.573045 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 16:49:44.574642 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 16:49:44.592035 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 16:49:44.623268 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 16:49:44.645513 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 16:49:44.647204 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 16:49:44.657506 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 16:49:44.677049 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 16:49:44.690311 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 16:49:44.697734 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 16:49:44.704751 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 16:49:44.708646 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 16:49:44.710430 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 16:49:44.711482 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 16:49:44.712931 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 16:49:44.721002 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 16:49:44.722742 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 16:49:44.725057 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 16:49:44.726564 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 16:49:44.779349 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 16:49:44.781000 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 16:49:44.782159 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 16:49:44.783466 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 16:49:44.981965 (MainThread): Acquiring new snowflake connection "model.my_parent_project.my_first_dbt_model".
+2022-09-18 16:49:44.993485 (MainThread): Acquiring new snowflake connection "model.my_parent_project.my_second_dbt_model".
+2022-09-18 16:49:44.996802 (MainThread): Acquiring new snowflake connection "model.my_parent_project.test_debt_model_parent".
+2022-09-18 16:49:45.025367 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.027199 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.028866 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.030533 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.032314 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.034102 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-09-18 16:49:45.048352 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eabedc7e-1ca9-4c8e-88ff-a136800bad4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a74a30>]}
+2022-09-18 16:49:45.053182 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-18 16:49:45.053740 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eabedc7e-1ca9-4c8e-88ff-a136800bad4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a3dc10>]}
+2022-09-18 16:49:45.053989 (MainThread): Found 3 models, 6 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-09-18 16:49:45.055184 (MainThread): 
+2022-09-18 16:49:45.055468 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 16:49:45.056218 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 16:49:45.068597 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 16:49:45.068771 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD"} */
+
+    show terse schemas in database FIVETRAN_SOUMYAD
+    limit 10000
+2022-09-18 16:49:45.068903 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-18 16:49:53.880879 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 26 in 8.81 seconds
+2022-09-18 16:49:53.884846 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: Close
+2022-09-18 16:49:54.663927 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 16:49:54.672641 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 16:49:54.672848 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-18 16:49:54.673034 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-09-18 16:49:57.215736 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 10 in 2.54 seconds
+2022-09-18 16:49:57.218477 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-18 16:49:58.128584 (MainThread): 22:19:58 | Concurrency: 10 threads (target='dev')
+2022-09-18 16:49:58.128952 (MainThread): 22:19:58 | 
+2022-09-18 16:49:58.131698 (Thread-1): Began running node model.my_parent_project.my_first_dbt_model
+2022-09-18 16:49:58.132033 (Thread-2): Began running node model.my_parent_project.test_debt_model_parent
+2022-09-18 16:49:58.132421 (Thread-1): 22:19:58 | 1 of 3 START table model POSTGRES_RDS_PUBLIC.my_first_dbt_model...... [RUN]
+2022-09-18 16:49:58.132849 (Thread-2): 22:19:58 | 2 of 3 START table model POSTGRES_RDS_PUBLIC.test_debt_model_parent.. [RUN]
+2022-09-18 16:49:58.133305 (Thread-1): Acquiring new snowflake connection "model.my_parent_project.my_first_dbt_model".
+2022-09-18 16:49:58.133710 (Thread-2): Acquiring new snowflake connection "model.my_parent_project.test_debt_model_parent".
+2022-09-18 16:49:58.133950 (Thread-1): Compiling model.my_parent_project.my_first_dbt_model
+2022-09-18 16:49:58.134150 (Thread-2): Compiling model.my_parent_project.test_debt_model_parent
+2022-09-18 16:49:58.137153 (Thread-1): Writing injected SQL for node "model.my_parent_project.my_first_dbt_model"
+2022-09-18 16:49:58.139582 (Thread-2): Writing injected SQL for node "model.my_parent_project.test_debt_model_parent"
+2022-09-18 16:49:58.140711 (Thread-1): finished collecting timing info
+2022-09-18 16:49:58.146904 (Thread-2): finished collecting timing info
+2022-09-18 16:49:58.181876 (Thread-1): Writing runtime SQL for node "model.my_parent_project.my_first_dbt_model"
+2022-09-18 16:49:58.188023 (Thread-2): Writing runtime SQL for node "model.my_parent_project.test_debt_model_parent"
+2022-09-18 16:49:58.189375 (Thread-1): Using snowflake connection "model.my_parent_project.my_first_dbt_model".
+2022-09-18 16:49:58.189551 (Thread-1): On model.my_parent_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.my_parent_project.my_first_dbt_model"} */
+
+
+      create or replace transient table FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-09-18 16:49:58.189716 (Thread-1): Opening a new connection, currently in state closed
+2022-09-18 16:49:58.191500 (Thread-2): Using snowflake connection "model.my_parent_project.test_debt_model_parent".
+2022-09-18 16:49:58.191683 (Thread-2): On model.my_parent_project.test_debt_model_parent: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.my_parent_project.test_debt_model_parent"} */
+
+
+      create or replace transient table FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.test_debt_model_parent  as
+      (
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+      );
+2022-09-18 16:49:58.191844 (Thread-2): Opening a new connection, currently in state init
+2022-09-18 16:50:00.714000 (Thread-1): SQL status: SUCCESS 1 in 2.52 seconds
+2022-09-18 16:50:00.726651 (Thread-2): SQL status: SUCCESS 1 in 2.53 seconds
+2022-09-18 16:50:00.728823 (Thread-1): finished collecting timing info
+2022-09-18 16:50:00.730183 (Thread-2): finished collecting timing info
+2022-09-18 16:50:00.730450 (Thread-1): On model.my_parent_project.my_first_dbt_model: Close
+2022-09-18 16:50:00.730667 (Thread-2): On model.my_parent_project.test_debt_model_parent: Close
+2022-09-18 16:50:01.408816 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eabedc7e-1ca9-4c8e-88ff-a136800bad4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a3ddf0>]}
+2022-09-18 16:50:01.409435 (Thread-1): 22:20:01 | 1 of 3 OK created table model POSTGRES_RDS_PUBLIC.my_first_dbt_model. [SUCCESS 1 in 3.28s]
+2022-09-18 16:50:01.409729 (Thread-1): Finished running node model.my_parent_project.my_first_dbt_model
+2022-09-18 16:50:01.410313 (Thread-4): Began running node model.my_parent_project.my_second_dbt_model
+2022-09-18 16:50:01.410733 (Thread-4): 22:20:01 | 3 of 3 START view model POSTGRES_RDS_PUBLIC.my_second_dbt_model...... [RUN]
+2022-09-18 16:50:01.411224 (Thread-4): Acquiring new snowflake connection "model.my_parent_project.my_second_dbt_model".
+2022-09-18 16:50:01.411478 (Thread-4): Compiling model.my_parent_project.my_second_dbt_model
+2022-09-18 16:50:01.414466 (Thread-4): Writing injected SQL for node "model.my_parent_project.my_second_dbt_model"
+2022-09-18 16:50:01.415029 (Thread-4): finished collecting timing info
+2022-09-18 16:50:01.434203 (Thread-4): Writing runtime SQL for node "model.my_parent_project.my_second_dbt_model"
+2022-09-18 16:50:01.435195 (Thread-4): Using snowflake connection "model.my_parent_project.my_second_dbt_model".
+2022-09-18 16:50:01.435382 (Thread-4): On model.my_parent_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.my_parent_project.my_second_dbt_model"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2022-09-18 16:50:01.435543 (Thread-4): Opening a new connection, currently in state init
+2022-09-18 16:50:01.448810 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eabedc7e-1ca9-4c8e-88ff-a136800bad4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e37eb0>]}
+2022-09-18 16:50:01.449338 (Thread-2): 22:20:01 | 2 of 3 OK created table model POSTGRES_RDS_PUBLIC.test_debt_model_parent [SUCCESS 1 in 3.32s]
+2022-09-18 16:50:01.449573 (Thread-2): Finished running node model.my_parent_project.test_debt_model_parent
+2022-09-18 16:50:03.805995 (Thread-4): SQL status: SUCCESS 1 in 2.37 seconds
+2022-09-18 16:50:03.808340 (Thread-4): finished collecting timing info
+2022-09-18 16:50:03.808648 (Thread-4): On model.my_parent_project.my_second_dbt_model: Close
+2022-09-18 16:50:04.623117 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eabedc7e-1ca9-4c8e-88ff-a136800bad4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105df3310>]}
+2022-09-18 16:50:04.623694 (Thread-4): 22:20:04 | 3 of 3 OK created view model POSTGRES_RDS_PUBLIC.my_second_dbt_model. [SUCCESS 1 in 3.21s]
+2022-09-18 16:50:04.623978 (Thread-4): Finished running node model.my_parent_project.my_second_dbt_model
+2022-09-18 16:50:04.625881 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 16:50:04.626402 (MainThread): 22:20:04 | 
+2022-09-18 16:50:04.626629 (MainThread): 22:20:04 | Finished running 2 table models, 1 view model in 19.57s.
+2022-09-18 16:50:04.626835 (MainThread): Connection 'master' was properly closed.
+2022-09-18 16:50:04.627008 (MainThread): Connection 'model.my_parent_project.my_first_dbt_model' was properly closed.
+2022-09-18 16:50:04.627173 (MainThread): Connection 'model.my_parent_project.test_debt_model_parent' was properly closed.
+2022-09-18 16:50:04.627333 (MainThread): Connection 'model.my_parent_project.my_second_dbt_model' was properly closed.
+2022-09-18 16:50:04.633010 (MainThread): 
+2022-09-18 16:50:04.633298 (MainThread): Completed successfully
+2022-09-18 16:50:04.633538 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2022-09-18 16:50:04.633848 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a74c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a74f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059994f0>]}
+2022-09-18 16:50:04.634175 (MainThread): Flushing usage events
