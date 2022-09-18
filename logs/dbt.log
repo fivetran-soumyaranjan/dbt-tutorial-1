@@ -1,0 +1,300 @@
+2022-09-18 17:06:33.681890 (MainThread): Running with dbt=0.21.1
+2022-09-18 17:06:34.130227 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 17:06:34.132429 (MainThread): Tracking: tracking
+2022-09-18 17:06:34.133026 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f89250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e352e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f86730>]}
+2022-09-18 17:06:34.144674 (MainThread): Partial parsing not enabled
+2022-09-18 17:06:34.158062 (MainThread): Parsing macros/catalog.sql
+2022-09-18 17:06:34.160500 (MainThread): Parsing macros/adapters.sql
+2022-09-18 17:06:34.198488 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 17:06:34.202301 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 17:06:34.206924 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 17:06:34.208262 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 17:06:34.211431 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 17:06:34.219880 (MainThread): Parsing macros/core.sql
+2022-09-18 17:06:34.223464 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 17:06:34.230047 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 17:06:34.239948 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 17:06:34.241692 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 17:06:34.259463 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 17:06:34.291668 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 17:06:34.314959 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 17:06:34.316734 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 17:06:34.327270 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 17:06:34.345799 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 17:06:34.359150 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 17:06:34.366301 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 17:06:34.373848 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 17:06:34.377479 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 17:06:34.378850 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 17:06:34.379742 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 17:06:34.381141 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 17:06:34.388970 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 17:06:34.390654 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 17:06:34.392885 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 17:06:34.394342 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 17:06:34.445267 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 17:06:34.446796 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 17:06:34.447905 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 17:06:34.449151 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 17:06:34.642479 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 17:06:34.661121 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140add90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140a4f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140c4df0>]}
+2022-09-18 17:06:34.661366 (MainThread): Flushing usage events
+2022-09-18 17:06:36.344013 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 17:06:36.344368 (MainThread): Encountered an error:
+2022-09-18 17:06:36.344708 (MainThread): Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+2022-09-18 17:06:36.346660 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 438, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 154, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 360, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 783, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1088, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 828, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 618, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 447, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+
+2022-09-18 17:06:57.070467 (MainThread): Running with dbt=0.21.1
+2022-09-18 17:06:57.524333 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 17:06:57.526034 (MainThread): Tracking: tracking
+2022-09-18 17:06:57.526757 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec43ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db115b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec51b80>]}
+2022-09-18 17:06:57.538688 (MainThread): Partial parsing not enabled
+2022-09-18 17:06:57.550795 (MainThread): Parsing macros/catalog.sql
+2022-09-18 17:06:57.552980 (MainThread): Parsing macros/adapters.sql
+2022-09-18 17:06:57.590385 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 17:06:57.594396 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 17:06:57.598867 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 17:06:57.600183 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 17:06:57.603226 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 17:06:57.611668 (MainThread): Parsing macros/core.sql
+2022-09-18 17:06:57.615196 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 17:06:57.621599 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 17:06:57.631166 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 17:06:57.632736 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 17:06:57.649776 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 17:06:57.680722 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 17:06:57.702626 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 17:06:57.704289 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 17:06:57.714318 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 17:06:57.733023 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 17:06:57.745926 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 17:06:57.753850 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 17:06:57.760485 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 17:06:57.764020 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 17:06:57.765377 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 17:06:57.766258 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 17:06:57.767643 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 17:06:57.775549 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 17:06:57.777215 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 17:06:57.779425 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 17:06:57.780910 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 17:06:57.831103 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 17:06:57.832584 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 17:06:57.834979 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 17:06:57.836248 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 17:06:58.028705 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 17:06:58.059343 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed77e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed56a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed568e0>]}
+2022-09-18 17:06:58.059587 (MainThread): Flushing usage events
+2022-09-18 17:06:59.492443 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 17:06:59.492796 (MainThread): Encountered an error:
+2022-09-18 17:06:59.493089 (MainThread): Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+2022-09-18 17:06:59.494958 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 438, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 154, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 360, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 783, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1088, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 828, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 618, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 447, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+
+2022-09-18 17:08:02.276060 (MainThread): Running with dbt=0.21.1
+2022-09-18 17:08:02.726126 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.compile.CompileTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', parse_only=False, partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='compile', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='compile', write_json=True)
+2022-09-18 17:08:02.727575 (MainThread): Tracking: tracking
+2022-09-18 17:08:02.728458 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11193c670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110810d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11194e8e0>]}
+2022-09-18 17:08:02.741078 (MainThread): Partial parsing not enabled
+2022-09-18 17:08:02.755185 (MainThread): Parsing macros/catalog.sql
+2022-09-18 17:08:02.757378 (MainThread): Parsing macros/adapters.sql
+2022-09-18 17:08:02.795127 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 17:08:02.798952 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 17:08:02.803547 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 17:08:02.804884 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 17:08:02.807957 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 17:08:02.816376 (MainThread): Parsing macros/core.sql
+2022-09-18 17:08:02.819963 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 17:08:02.826594 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 17:08:02.836249 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 17:08:02.837906 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 17:08:02.855668 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 17:08:02.887870 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 17:08:02.911148 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 17:08:02.912907 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 17:08:02.923372 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 17:08:02.942128 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 17:08:02.955539 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 17:08:02.963444 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 17:08:02.970222 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 17:08:02.973965 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 17:08:02.975343 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 17:08:02.976243 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 17:08:02.977654 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 17:08:02.987076 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 17:08:02.988779 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 17:08:02.991025 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 17:08:02.992486 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 17:08:03.043406 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 17:08:03.044939 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 17:08:03.046041 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 17:08:03.047289 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 17:08:03.238877 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.dummy_model_to_check".
+2022-09-18 17:08:03.250215 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 17:08:03.271853 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a67310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a7a5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a176d0>]}
+2022-09-18 17:08:03.272076 (MainThread): Flushing usage events
+2022-09-18 17:08:04.860093 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 17:08:04.860472 (MainThread): Encountered an error:
+2022-09-18 17:08:04.860768 (MainThread): Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+2022-09-18 17:08:04.862691 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 438, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 154, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 360, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 783, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1088, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 828, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 618, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 447, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us.sys_config' which was not found
+
+2022-09-18 17:10:40.071077 (MainThread): Running with dbt=0.21.1
+2022-09-18 17:10:40.522028 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.compile.CompileTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', parse_only=False, partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='compile', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='compile', write_json=True)
+2022-09-18 17:10:40.523445 (MainThread): Tracking: tracking
+2022-09-18 17:10:40.523935 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bbc730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a89c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bd0880>]}
+2022-09-18 17:10:40.535397 (MainThread): Partial parsing not enabled
+2022-09-18 17:10:40.547485 (MainThread): Parsing macros/catalog.sql
+2022-09-18 17:10:40.549709 (MainThread): Parsing macros/adapters.sql
+2022-09-18 17:10:40.587053 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 17:10:40.590999 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 17:10:40.595654 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 17:10:40.597032 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 17:10:40.600216 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 17:10:40.609014 (MainThread): Parsing macros/core.sql
+2022-09-18 17:10:40.612701 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 17:10:40.619346 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 17:10:40.629300 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 17:10:40.630938 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 17:10:40.647702 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 17:10:40.678417 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 17:10:40.700793 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 17:10:40.702461 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 17:10:40.712308 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 17:10:40.731557 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 17:10:40.744616 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 17:10:40.751944 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 17:10:40.758695 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 17:10:40.762321 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 17:10:40.763709 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 17:10:40.764608 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 17:10:40.766032 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 17:10:40.774536 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 17:10:40.776238 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 17:10:40.778497 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 17:10:40.779977 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 17:10:40.831329 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 17:10:40.832823 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 17:10:40.833903 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 17:10:40.835117 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 17:10:41.023717 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.dummy_model_to_check".
+2022-09-18 17:10:41.034662 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 17:10:41.068239 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cbec95ad-07e6-4c8a-bfa3-ca30c19d4b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c461c0>]}
+2022-09-18 17:10:41.072169 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-18 17:10:41.072462 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cbec95ad-07e6-4c8a-bfa3-ca30c19d4b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c46550>]}
+2022-09-18 17:10:41.072673 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2022-09-18 17:10:41.073743 (MainThread): 
+2022-09-18 17:10:41.074050 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 17:10:41.074980 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 17:10:41.089251 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 17:10:41.089455 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-18 17:10:41.089847 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-18 17:10:44.291853 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 12 in 3.20 seconds
+2022-09-18 17:10:44.294908 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-18 17:10:45.176555 (MainThread): 22:40:45 | Concurrency: 10 threads (target='dev')
+2022-09-18 17:10:45.176894 (MainThread): 22:40:45 | 
+2022-09-18 17:10:45.179830 (Thread-1): Began running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 17:10:45.180370 (Thread-1): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 17:10:45.180649 (Thread-1): Compiling model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 17:10:45.183434 (Thread-1): Writing injected SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-18 17:10:45.184282 (Thread-1): finished collecting timing info
+2022-09-18 17:10:45.184559 (Thread-1): finished collecting timing info
+2022-09-18 17:10:45.184979 (Thread-1): Finished running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 17:10:45.186263 (MainThread): Connection 'master' was properly closed.
+2022-09-18 17:10:45.186472 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 17:10:45.192556 (MainThread): 22:40:45 | Done.
+2022-09-18 17:10:45.192901 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b9cdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9cc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d305e0>]}
+2022-09-18 17:10:45.193235 (MainThread): Flushing usage events
