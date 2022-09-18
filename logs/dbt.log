@@ -1,8 +1,0 @@
-2022-09-15 13:37:50.064576 (MainThread): Running with dbt=0.21.1
-2022-09-15 13:37:50.068093 (MainThread): Profile not loaded due to error: Runtime Error
-  Could not find profile named 'default'
-2022-09-15 13:37:50.068186 (MainThread): No profile "default" found, continuing with no target
-2022-09-15 13:37:50.088337 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='deps', write_json=True)
-2022-09-15 13:37:50.089168 (MainThread): Tracking: do not track
-2022-09-15 13:37:50.103785 (MainThread): Warning: No packages were found in packages.yml
-2022-09-15 13:37:50.104710 (MainThread): Flushing usage events
