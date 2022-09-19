@@ -1,7 +1,0 @@
-jobs:
-# --- 
-# name: fivetran_mysql2_us_sys_sys_config.sql 
-# trigger: 
-#   type: table 
-#   tables: 
-#   - fivetran_mysql2_us_sys.sys_config 
