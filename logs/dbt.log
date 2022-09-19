@@ -298,3 +298,1047 @@ dbt.exceptions.CompilationException: Compilation Error in model fivetran_mysql2_
 2022-09-18 17:10:45.192556 (MainThread): 22:40:45 | Done.
 2022-09-18 17:10:45.192901 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b9cdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9cc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d305e0>]}
 2022-09-18 17:10:45.193235 (MainThread): Flushing usage events
+2022-09-18 18:35:54.735892 (MainThread): Running with dbt=0.21.1
+2022-09-18 18:35:55.193183 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 18:35:55.194687 (MainThread): Tracking: tracking
+2022-09-18 18:35:55.195221 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f874c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e310d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f857c0>]}
+2022-09-18 18:35:55.207198 (MainThread): Partial parsing not enabled
+2022-09-18 18:35:55.220524 (MainThread): Parsing macros/catalog.sql
+2022-09-18 18:35:55.222844 (MainThread): Parsing macros/adapters.sql
+2022-09-18 18:35:55.260631 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 18:35:55.264601 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 18:35:55.269331 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 18:35:55.270715 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 18:35:55.273923 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 18:35:55.282691 (MainThread): Parsing macros/core.sql
+2022-09-18 18:35:55.286429 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 18:35:55.293118 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 18:35:55.303170 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 18:35:55.304842 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 18:35:55.322525 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 18:35:55.354628 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 18:35:55.376468 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 18:35:55.378200 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 18:35:55.389477 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 18:35:55.411340 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 18:35:55.426745 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 18:35:55.435508 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 18:35:55.443680 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 18:35:55.448033 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 18:35:55.449693 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 18:35:55.450768 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 18:35:55.452466 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 18:35:55.461977 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 18:35:55.464025 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 18:35:55.466732 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 18:35:55.468490 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 18:35:55.526177 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 18:35:55.527914 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 18:35:55.529066 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 18:35:55.530401 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 18:35:55.730476 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.dummy_model_to_check".
+2022-09-18 18:35:55.743488 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:35:55.752870 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140adf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140adfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140cccd0>]}
+2022-09-18 18:35:55.753095 (MainThread): Flushing usage events
+2022-09-18 18:35:57.564717 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 18:35:57.565057 (MainThread): Encountered an error:
+2022-09-18 18:35:57.565394 (MainThread): Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us_sys.sys_config' which was not found
+2022-09-18 18:35:57.567207 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 438, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 154, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 360, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 783, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1088, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 828, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 618, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 447, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  Model 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' (models/fivetran_mysql2_us_sys_config.sql) depends on a source named 'fivetran_mysql2_us_sys.sys_config' which was not found
+
+2022-09-18 18:36:46.548661 (MainThread): Running with dbt=0.21.1
+2022-09-18 18:36:46.999919 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 18:36:47.001406 (MainThread): Tracking: tracking
+2022-09-18 18:36:47.001985 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134a6070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11236d9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134ad5e0>]}
+2022-09-18 18:36:47.014046 (MainThread): Partial parsing not enabled
+2022-09-18 18:36:47.027038 (MainThread): Parsing macros/catalog.sql
+2022-09-18 18:36:47.029404 (MainThread): Parsing macros/adapters.sql
+2022-09-18 18:36:47.067665 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 18:36:47.071661 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 18:36:47.076365 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 18:36:47.077760 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 18:36:47.080985 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 18:36:47.089901 (MainThread): Parsing macros/core.sql
+2022-09-18 18:36:47.093639 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 18:36:47.100344 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 18:36:47.110175 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 18:36:47.111817 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 18:36:47.129311 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 18:36:47.161147 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 18:36:47.183650 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 18:36:47.185317 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 18:36:47.195524 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 18:36:47.214256 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 18:36:47.227463 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 18:36:47.235841 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 18:36:47.243188 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 18:36:47.246928 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 18:36:47.248351 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 18:36:47.249285 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 18:36:47.250708 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 18:36:47.258675 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 18:36:47.260384 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 18:36:47.262649 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 18:36:47.264124 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 18:36:47.315547 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 18:36:47.317117 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 18:36:47.318233 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 18:36:47.319501 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 18:36:47.515184 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:36:47.556789 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fd25fce-ef32-474d-ac63-238e957517d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134f3a60>]}
+2022-09-18 18:36:47.560377 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-18 18:36:47.560693 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fd25fce-ef32-474d-ac63-238e957517d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113525a90>]}
+2022-09-18 18:36:47.560908 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2022-09-18 18:36:47.561924 (MainThread): 
+2022-09-18 18:36:47.562291 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 18:36:47.563556 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 18:36:47.578454 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 18:36:47.578681 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD"} */
+
+    show terse schemas in database FIVETRAN_SOUMYAD
+    limit 10000
+2022-09-18 18:36:47.578830 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-18 18:36:49.959216 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 26 in 2.38 seconds
+2022-09-18 18:36:49.962750 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: Close
+2022-09-18 18:36:50.664302 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 18:36:50.673372 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 18:36:50.673579 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-18 18:36:50.673764 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-09-18 18:36:52.638743 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 12 in 1.96 seconds
+2022-09-18 18:36:52.641732 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-18 18:36:53.389119 (MainThread): 00:06:53 | Concurrency: 10 threads (target='dev')
+2022-09-18 18:36:53.389408 (MainThread): 00:06:53 | 
+2022-09-18 18:36:53.391534 (Thread-1): Began running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:36:53.391896 (Thread-1): 00:06:53 | 1 of 1 START view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [RUN]
+2022-09-18 18:36:53.392279 (Thread-1): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:36:53.392511 (Thread-1): Compiling model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:36:53.395280 (Thread-1): Writing injected SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-18 18:36:53.395883 (Thread-1): finished collecting timing info
+2022-09-18 18:36:53.422486 (Thread-1): Writing runtime SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-18 18:36:53.423846 (Thread-1): Using snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:36:53.424051 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config  as (
+    delete from FIVETRAN_SOUMYAD.fivetran_mysql2_us_sys.sys_config where _fivetran_deleted = True;
+2022-09-18 18:36:53.424220 (Thread-1): Opening a new connection, currently in state closed
+2022-09-18 18:36:55.530152 (Thread-1): Snowflake query id: 01a70e7c-0504-cfc7-0000-0505ea71cb4e
+2022-09-18 18:36:55.530513 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-18 18:36:55.530888 (Thread-1): finished collecting timing info
+2022-09-18 18:36:55.531239 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: Close
+2022-09-18 18:36:56.306937 (Thread-1): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-18 18:36:56.310806 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fd25fce-ef32-474d-ac63-238e957517d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b896b20>]}
+2022-09-18 18:36:56.311495 (Thread-1): 00:06:56 | 1 of 1 ERROR creating view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [ERROR in 2.92s]
+2022-09-18 18:36:56.311870 (Thread-1): Finished running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:36:56.314074 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 18:36:56.314559 (MainThread): 00:06:56 | 
+2022-09-18 18:36:56.314832 (MainThread): 00:06:56 | Finished running 1 view model in 8.75s.
+2022-09-18 18:36:56.315089 (MainThread): Connection 'master' was properly closed.
+2022-09-18 18:36:56.315306 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 18:36:56.335549 (MainThread): 
+2022-09-18 18:36:56.335790 (MainThread): Completed with 1 error and 0 warnings:
+2022-09-18 18:36:56.335962 (MainThread): 
+2022-09-18 18:36:56.336135 (MainThread): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+2022-09-18 18:36:56.336296 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-18 18:36:56.336446 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-18 18:36:56.336593 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-18 18:36:56.336751 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2022-09-18 18:36:56.337034 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11356c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113553a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135f8fa0>]}
+2022-09-18 18:36:56.337336 (MainThread): Flushing usage events
+2022-09-18 18:37:34.891320 (MainThread): Running with dbt=0.21.1
+2022-09-18 18:37:35.340390 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-18 18:37:35.341740 (MainThread): Tracking: tracking
+2022-09-18 18:37:35.342242 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10581b4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046bbe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057f18b0>]}
+2022-09-18 18:37:35.353611 (MainThread): Partial parsing not enabled
+2022-09-18 18:37:35.367508 (MainThread): Parsing macros/catalog.sql
+2022-09-18 18:37:35.369828 (MainThread): Parsing macros/adapters.sql
+2022-09-18 18:37:35.407924 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-18 18:37:35.411672 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-18 18:37:35.416125 (MainThread): Parsing macros/materializations/view.sql
+2022-09-18 18:37:35.417433 (MainThread): Parsing macros/materializations/table.sql
+2022-09-18 18:37:35.420470 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-18 18:37:35.428740 (MainThread): Parsing macros/core.sql
+2022-09-18 18:37:35.432262 (MainThread): Parsing macros/materializations/test.sql
+2022-09-18 18:37:35.438606 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-18 18:37:35.448374 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-18 18:37:35.449997 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-18 18:37:35.467797 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-18 18:37:35.500067 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-18 18:37:35.523069 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-18 18:37:35.524831 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-18 18:37:35.535346 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-18 18:37:35.555326 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-18 18:37:35.568265 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-18 18:37:35.576247 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-18 18:37:35.583061 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-18 18:37:35.587277 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-18 18:37:35.588809 (MainThread): Parsing macros/etc/query.sql
+2022-09-18 18:37:35.589735 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-18 18:37:35.591173 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-18 18:37:35.599184 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-18 18:37:35.600900 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-18 18:37:35.603186 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-18 18:37:35.604685 (MainThread): Parsing macros/adapters/common.sql
+2022-09-18 18:37:35.655872 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-18 18:37:35.657714 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-18 18:37:35.658841 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-18 18:37:35.660124 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-18 18:37:35.850096 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:37:35.890494 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8d9c97e-5fbd-4f0b-a4f2-e9584d7fe4c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10584ad90>]}
+2022-09-18 18:37:35.893974 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-18 18:37:35.894288 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd8d9c97e-5fbd-4f0b-a4f2-e9584d7fe4c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105913cd0>]}
+2022-09-18 18:37:35.894496 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2022-09-18 18:37:35.895509 (MainThread): 
+2022-09-18 18:37:35.895812 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 18:37:35.896470 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 18:37:35.911906 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-18 18:37:35.912100 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD"} */
+
+    show terse schemas in database FIVETRAN_SOUMYAD
+    limit 10000
+2022-09-18 18:37:35.912233 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-18 18:37:38.200358 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 26 in 2.29 seconds
+2022-09-18 18:37:38.203989 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: Close
+2022-09-18 18:37:38.897740 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 18:37:38.906840 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-18 18:37:38.907051 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-18 18:37:38.907237 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-09-18 18:37:40.942041 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 12 in 2.03 seconds
+2022-09-18 18:37:40.945046 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-18 18:37:41.613251 (MainThread): 00:07:41 | Concurrency: 10 threads (target='dev')
+2022-09-18 18:37:41.613590 (MainThread): 00:07:41 | 
+2022-09-18 18:37:41.615992 (Thread-1): Began running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:37:41.616343 (Thread-1): 00:07:41 | 1 of 1 START view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [RUN]
+2022-09-18 18:37:41.616718 (Thread-1): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:37:41.616930 (Thread-1): Compiling model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:37:41.619839 (Thread-1): Writing injected SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-18 18:37:41.620395 (Thread-1): finished collecting timing info
+2022-09-18 18:37:41.647540 (Thread-1): Writing runtime SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-18 18:37:41.648518 (Thread-1): Using snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-18 18:37:41.648684 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config  as (
+    delete from FIVETRAN_SOUMYAD.fivetran_mysql2_us_sys.sys_config where _fivetran_deleted = True;
+2022-09-18 18:37:41.648842 (Thread-1): Opening a new connection, currently in state closed
+2022-09-18 18:37:43.849008 (Thread-1): Snowflake query id: 01a70e7d-0504-d1c1-0000-0505ea71daf2
+2022-09-18 18:37:43.849298 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-18 18:37:43.849602 (Thread-1): finished collecting timing info
+2022-09-18 18:37:43.849896 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: Close
+2022-09-18 18:37:44.692050 (Thread-1): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-18 18:37:44.693421 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8d9c97e-5fbd-4f0b-a4f2-e9584d7fe4c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105babd00>]}
+2022-09-18 18:37:44.693931 (Thread-1): 00:07:44 | 1 of 1 ERROR creating view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [ERROR in 3.08s]
+2022-09-18 18:37:44.694211 (Thread-1): Finished running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-18 18:37:44.695933 (MainThread): Acquiring new snowflake connection "master".
+2022-09-18 18:37:44.696334 (MainThread): 00:07:44 | 
+2022-09-18 18:37:44.696549 (MainThread): 00:07:44 | Finished running 1 view model in 8.80s.
+2022-09-18 18:37:44.696747 (MainThread): Connection 'master' was properly closed.
+2022-09-18 18:37:44.696912 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-18 18:37:44.701940 (MainThread): 
+2022-09-18 18:37:44.702169 (MainThread): Completed with 1 error and 0 warnings:
+2022-09-18 18:37:44.702363 (MainThread): 
+2022-09-18 18:37:44.702533 (MainThread): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+2022-09-18 18:37:44.702695 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-18 18:37:44.702847 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-18 18:37:44.702999 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-18 18:37:44.703158 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2022-09-18 18:37:44.703386 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105867dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058b63a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058fd850>]}
+2022-09-18 18:37:44.703628 (MainThread): Flushing usage events
+2022-09-19 05:02:57.076106 (MainThread): Running with dbt=0.21.1
+2022-09-19 05:02:57.940310 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-19 05:02:57.942131 (MainThread): Tracking: tracking
+2022-09-19 05:02:57.942609 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105597460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104433880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10556b7f0>]}
+2022-09-19 05:02:57.956122 (MainThread): Partial parsing not enabled
+2022-09-19 05:02:57.974548 (MainThread): Parsing macros/catalog.sql
+2022-09-19 05:02:57.976741 (MainThread): Parsing macros/adapters.sql
+2022-09-19 05:02:58.016400 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-19 05:02:58.020332 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-19 05:02:58.025030 (MainThread): Parsing macros/materializations/view.sql
+2022-09-19 05:02:58.026714 (MainThread): Parsing macros/materializations/table.sql
+2022-09-19 05:02:58.029852 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-19 05:02:58.038259 (MainThread): Parsing macros/core.sql
+2022-09-19 05:02:58.041848 (MainThread): Parsing macros/materializations/test.sql
+2022-09-19 05:02:58.048448 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-19 05:02:58.057799 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-19 05:02:58.059389 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-19 05:02:58.076323 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-19 05:02:58.107455 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-19 05:02:58.129582 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-19 05:02:58.131273 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-19 05:02:58.141271 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-19 05:02:58.160037 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-19 05:02:58.172835 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-19 05:02:58.180088 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-19 05:02:58.186928 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-19 05:02:58.190706 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-19 05:02:58.192064 (MainThread): Parsing macros/etc/query.sql
+2022-09-19 05:02:58.193099 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-19 05:02:58.194492 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-19 05:02:58.202272 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-19 05:02:58.204107 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-19 05:02:58.206332 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-19 05:02:58.207781 (MainThread): Parsing macros/adapters/common.sql
+2022-09-19 05:02:58.259107 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-19 05:02:58.260697 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-19 05:02:58.261797 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-19 05:02:58.263044 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-19 05:02:58.460140 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:02:58.472960 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:02:58.511905 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a08ab149-040a-4d9b-b878-f12392011f38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e2f10>]}
+2022-09-19 05:02:58.516481 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-19 05:02:58.516828 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a08ab149-040a-4d9b-b878-f12392011f38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105620280>]}
+2022-09-19 05:02:58.517065 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2022-09-19 05:02:58.518372 (MainThread): 
+2022-09-19 05:02:58.518666 (MainThread): Acquiring new snowflake connection "master".
+2022-09-19 05:02:58.519332 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-19 05:02:58.533204 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-19 05:02:58.533448 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD"} */
+
+    show terse schemas in database FIVETRAN_SOUMYAD
+    limit 10000
+2022-09-19 05:02:58.533615 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-19 05:03:00.953223 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 26 in 2.42 seconds
+2022-09-19 05:03:00.956787 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: Close
+2022-09-19 05:03:01.603703 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-19 05:03:01.612124 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-19 05:03:01.612328 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-19 05:03:01.612513 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-09-19 05:03:03.804663 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 12 in 2.19 seconds
+2022-09-19 05:03:03.807664 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-19 05:03:04.442154 (MainThread): 10:33:04 | Concurrency: 10 threads (target='dev')
+2022-09-19 05:03:04.442499 (MainThread): 10:33:04 | 
+2022-09-19 05:03:04.445059 (Thread-1): Began running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:04.445343 (Thread-2): Began running node model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:04.445672 (Thread-1): 10:33:04 | 1 of 2 START view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [RUN]
+2022-09-19 05:03:04.445979 (Thread-2): 10:33:04 | 2 of 2 START view model POSTGRES_RDS_PUBLIC.mysql_rds_test........... [RUN]
+2022-09-19 05:03:04.446381 (Thread-1): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:03:04.446724 (Thread-1): Compiling model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:04.447121 (Thread-2): Acquiring new snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:03:04.450146 (Thread-1): Writing injected SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-19 05:03:04.450368 (Thread-2): Compiling model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:04.453037 (Thread-2): Writing injected SQL for node "model.PROD_US_West_2.mysql_rds_test"
+2022-09-19 05:03:04.453480 (Thread-1): finished collecting timing info
+2022-09-19 05:03:04.465436 (Thread-2): finished collecting timing info
+2022-09-19 05:03:04.493771 (Thread-1): Writing runtime SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-19 05:03:04.492306 (Thread-2): Writing runtime SQL for node "model.PROD_US_West_2.mysql_rds_test"
+2022-09-19 05:03:04.495165 (Thread-2): Using snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:03:04.495358 (Thread-2): On model.PROD_US_West_2.mysql_rds_test: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.mysql_rds_test"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.mysql_rds_test  as (
+    delete from FIVETRAN_SOUMYAD.mysql_rds_test_soumya.persons where _fivetran_deleted = True;
+2022-09-19 05:03:04.495527 (Thread-2): Opening a new connection, currently in state init
+2022-09-19 05:03:04.497510 (Thread-1): Using snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:03:04.497739 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config  as (
+    delete from FIVETRAN_SOUMYAD.fivetran_mysql2_us_sys.sys_config where _fivetran_deleted = True;
+2022-09-19 05:03:04.497907 (Thread-1): Opening a new connection, currently in state closed
+2022-09-19 05:03:06.475884 (Thread-2): Snowflake query id: 01a710ef-0504-d1c1-0000-0505eaad5686
+2022-09-19 05:03:06.476242 (Thread-2): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:06.476654 (Thread-2): finished collecting timing info
+2022-09-19 05:03:06.476945 (Thread-2): On model.PROD_US_West_2.mysql_rds_test: Close
+2022-09-19 05:03:06.479719 (Thread-1): Snowflake query id: 01a710ef-0504-cfc7-0000-0505eaad62f6
+2022-09-19 05:03:06.480236 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:06.480530 (Thread-1): finished collecting timing info
+2022-09-19 05:03:06.480759 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: Close
+2022-09-19 05:03:07.140560 (Thread-1): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-19 05:03:07.144442 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a08ab149-040a-4d9b-b878-f12392011f38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107743100>]}
+2022-09-19 05:03:07.145162 (Thread-1): 10:33:07 | 1 of 2 ERROR creating view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [ERROR in 2.70s]
+2022-09-19 05:03:07.145529 (Thread-1): Finished running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:07.151115 (Thread-2): Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+2022-09-19 05:03:07.152097 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a08ab149-040a-4d9b-b878-f12392011f38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107743af0>]}
+2022-09-19 05:03:07.152600 (Thread-2): 10:33:07 | 2 of 2 ERROR creating view model POSTGRES_RDS_PUBLIC.mysql_rds_test.. [ERROR in 2.71s]
+2022-09-19 05:03:07.152835 (Thread-2): Finished running node model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:07.155319 (MainThread): Acquiring new snowflake connection "master".
+2022-09-19 05:03:07.155779 (MainThread): 10:33:07 | 
+2022-09-19 05:03:07.156016 (MainThread): 10:33:07 | Finished running 2 view models in 8.64s.
+2022-09-19 05:03:07.156225 (MainThread): Connection 'master' was properly closed.
+2022-09-19 05:03:07.156401 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-19 05:03:07.156567 (MainThread): Connection 'model.PROD_US_West_2.mysql_rds_test' was properly closed.
+2022-09-19 05:03:07.162320 (MainThread): 
+2022-09-19 05:03:07.162608 (MainThread): Completed with 2 errors and 0 warnings:
+2022-09-19 05:03:07.162827 (MainThread): 
+2022-09-19 05:03:07.163036 (MainThread): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+2022-09-19 05:03:07.163235 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-19 05:03:07.163436 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:07.163632 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-19 05:03:07.163839 (MainThread): 
+2022-09-19 05:03:07.164056 (MainThread): Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+2022-09-19 05:03:07.164259 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-19 05:03:07.164446 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:07.164635 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+2022-09-19 05:03:07.164839 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+2022-09-19 05:03:07.165130 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105620460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105620370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105620760>]}
+2022-09-19 05:03:07.165432 (MainThread): Flushing usage events
+2022-09-19 05:03:47.233872 (MainThread): Running with dbt=0.21.1
+2022-09-19 05:03:47.688727 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/soumya_fivetran/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-09-19 05:03:47.689896 (MainThread): Tracking: tracking
+2022-09-19 05:03:47.690401 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d60490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c3ba60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d6f820>]}
+2022-09-19 05:03:47.702430 (MainThread): Partial parsing not enabled
+2022-09-19 05:03:47.715075 (MainThread): Parsing macros/catalog.sql
+2022-09-19 05:03:47.717282 (MainThread): Parsing macros/adapters.sql
+2022-09-19 05:03:47.754807 (MainThread): Parsing macros/materializations/merge.sql
+2022-09-19 05:03:47.758765 (MainThread): Parsing macros/materializations/seed.sql
+2022-09-19 05:03:47.763704 (MainThread): Parsing macros/materializations/view.sql
+2022-09-19 05:03:47.765128 (MainThread): Parsing macros/materializations/table.sql
+2022-09-19 05:03:47.768348 (MainThread): Parsing macros/materializations/incremental.sql
+2022-09-19 05:03:47.777199 (MainThread): Parsing macros/core.sql
+2022-09-19 05:03:47.780958 (MainThread): Parsing macros/materializations/test.sql
+2022-09-19 05:03:47.787688 (MainThread): Parsing macros/materializations/helpers.sql
+2022-09-19 05:03:47.797571 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-09-19 05:03:47.799236 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-09-19 05:03:47.817248 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-09-19 05:03:47.849338 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-09-19 05:03:47.871785 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-09-19 05:03:47.873395 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-09-19 05:03:47.882858 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-09-19 05:03:47.900822 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-09-19 05:03:47.913612 (MainThread): Parsing macros/materializations/table/table.sql
+2022-09-19 05:03:47.920784 (MainThread): Parsing macros/materializations/view/view.sql
+2022-09-19 05:03:47.927450 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-09-19 05:03:47.931141 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-09-19 05:03:47.932502 (MainThread): Parsing macros/etc/query.sql
+2022-09-19 05:03:47.933383 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-09-19 05:03:47.934812 (MainThread): Parsing macros/etc/datetime.sql
+2022-09-19 05:03:47.942612 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-09-19 05:03:47.944267 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-09-19 05:03:47.946480 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-09-19 05:03:47.947917 (MainThread): Parsing macros/adapters/common.sql
+2022-09-19 05:03:47.999762 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-09-19 05:03:48.001378 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-09-19 05:03:48.002468 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-09-19 05:03:48.003698 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-09-19 05:03:48.190618 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:03:48.201488 (MainThread): Acquiring new snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:03:48.233592 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7e8e45ff-e7ba-422a-a6f7-652be1de18e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e23fd0>]}
+2022-09-19 05:03:48.237053 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-09-19 05:03:48.237393 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7e8e45ff-e7ba-422a-a6f7-652be1de18e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109de6160>]}
+2022-09-19 05:03:48.237608 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2022-09-19 05:03:48.239365 (MainThread): 
+2022-09-19 05:03:48.239706 (MainThread): Acquiring new snowflake connection "master".
+2022-09-19 05:03:48.240977 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-19 05:03:48.255288 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_SOUMYAD".
+2022-09-19 05:03:48.255525 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD"} */
+
+    show terse schemas in database FIVETRAN_SOUMYAD
+    limit 10000
+2022-09-19 05:03:48.255684 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-09-19 05:03:50.514953 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 26 in 2.26 seconds
+2022-09-19 05:03:50.518500 (ThreadPoolExecutor-0_0): On list_FIVETRAN_SOUMYAD: Close
+2022-09-19 05:03:51.339498 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-19 05:03:51.347843 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC".
+2022-09-19 05:03:51.348049 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC"} */
+
+    show terse objects in FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC
+2022-09-19 05:03:51.348244 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-09-19 05:03:53.716794 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 12 in 2.37 seconds
+2022-09-19 05:03:53.719774 (ThreadPoolExecutor-1_0): On list_FIVETRAN_SOUMYAD_POSTGRES_RDS_PUBLIC: Close
+2022-09-19 05:03:54.411317 (MainThread): 10:33:54 | Concurrency: 10 threads (target='dev')
+2022-09-19 05:03:54.411666 (MainThread): 10:33:54 | 
+2022-09-19 05:03:54.414248 (Thread-1): Began running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:54.414615 (Thread-1): 10:33:54 | 1 of 2 START view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [RUN]
+2022-09-19 05:03:54.415003 (Thread-1): Acquiring new snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:03:54.415232 (Thread-2): Began running node model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:54.415498 (Thread-1): Compiling model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:54.415796 (Thread-2): 10:33:54 | 2 of 2 START view model POSTGRES_RDS_PUBLIC.mysql_rds_test........... [RUN]
+2022-09-19 05:03:54.416810 (Thread-2): Acquiring new snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:03:54.419277 (Thread-1): Writing injected SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-19 05:03:54.419517 (Thread-2): Compiling model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:54.422179 (Thread-2): Writing injected SQL for node "model.PROD_US_West_2.mysql_rds_test"
+2022-09-19 05:03:54.422694 (Thread-1): finished collecting timing info
+2022-09-19 05:03:54.429243 (Thread-2): finished collecting timing info
+2022-09-19 05:03:54.469225 (Thread-1): Writing runtime SQL for node "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"
+2022-09-19 05:03:54.471423 (Thread-2): Writing runtime SQL for node "model.PROD_US_West_2.mysql_rds_test"
+2022-09-19 05:03:54.473338 (Thread-1): Using snowflake connection "model.PROD_US_West_2.fivetran_mysql2_us_sys_config".
+2022-09-19 05:03:54.473519 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.fivetran_mysql2_us_sys_config"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config  as (
+    delete from FIVETRAN_SOUMYAD.fivetran_mysql2_us_sys.sys_config where _fivetran_deleted = True
+  );
+2022-09-19 05:03:54.473697 (Thread-1): Opening a new connection, currently in state closed
+2022-09-19 05:03:54.474920 (Thread-2): Using snowflake connection "model.PROD_US_West_2.mysql_rds_test".
+2022-09-19 05:03:54.475092 (Thread-2): On model.PROD_US_West_2.mysql_rds_test: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "default", "target_name": "dev", "node_id": "model.PROD_US_West_2.mysql_rds_test"} */
+
+  create or replace  view FIVETRAN_SOUMYAD.POSTGRES_RDS_PUBLIC.mysql_rds_test  as (
+    delete from FIVETRAN_SOUMYAD.mysql_rds_test_soumya.persons where _fivetran_deleted = True
+  );
+2022-09-19 05:03:54.475255 (Thread-2): Opening a new connection, currently in state init
+2022-09-19 05:03:56.418637 (Thread-2): Snowflake query id: 01a710ef-0504-d1c1-0000-0505eaad5eee
+2022-09-19 05:03:56.418928 (Thread-2): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:56.419224 (Thread-2): finished collecting timing info
+2022-09-19 05:03:56.419507 (Thread-2): On model.PROD_US_West_2.mysql_rds_test: Close
+2022-09-19 05:03:56.523888 (Thread-1): Snowflake query id: 01a710ef-0504-cfc7-0000-0505eaad6c1e
+2022-09-19 05:03:56.524247 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:56.524613 (Thread-1): finished collecting timing info
+2022-09-19 05:03:56.524970 (Thread-1): On model.PROD_US_West_2.fivetran_mysql2_us_sys_config: Close
+2022-09-19 05:03:57.045079 (Thread-2): Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+2022-09-19 05:03:57.046456 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7e8e45ff-e7ba-422a-a6f7-652be1de18e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d60580>]}
+2022-09-19 05:03:57.046976 (Thread-2): 10:33:57 | 2 of 2 ERROR creating view model POSTGRES_RDS_PUBLIC.mysql_rds_test.. [ERROR in 2.63s]
+2022-09-19 05:03:57.047263 (Thread-2): Finished running node model.PROD_US_West_2.mysql_rds_test
+2022-09-19 05:03:57.204953 (Thread-1): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 4 unexpected 'delete'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.13_1/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.21.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 4 unexpected 'delete'.
+  compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-19 05:03:57.205924 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7e8e45ff-e7ba-422a-a6f7-652be1de18e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112135c40>]}
+2022-09-19 05:03:57.206417 (Thread-1): 10:33:57 | 1 of 2 ERROR creating view model POSTGRES_RDS_PUBLIC.fivetran_mysql2_us_sys_config [ERROR in 2.79s]
+2022-09-19 05:03:57.206694 (Thread-1): Finished running node model.PROD_US_West_2.fivetran_mysql2_us_sys_config
+2022-09-19 05:03:57.208509 (MainThread): Acquiring new snowflake connection "master".
+2022-09-19 05:03:57.208927 (MainThread): 10:33:57 | 
+2022-09-19 05:03:57.209156 (MainThread): 10:33:57 | Finished running 2 view models in 8.97s.
+2022-09-19 05:03:57.209364 (MainThread): Connection 'master' was properly closed.
+2022-09-19 05:03:57.209536 (MainThread): Connection 'model.PROD_US_West_2.fivetran_mysql2_us_sys_config' was properly closed.
+2022-09-19 05:03:57.209703 (MainThread): Connection 'model.PROD_US_West_2.mysql_rds_test' was properly closed.
+2022-09-19 05:03:57.214817 (MainThread): 
+2022-09-19 05:03:57.215054 (MainThread): Completed with 2 errors and 0 warnings:
+2022-09-19 05:03:57.215266 (MainThread): 
+2022-09-19 05:03:57.215476 (MainThread): Database Error in model mysql_rds_test (models/mysql_rds_test.sql)
+2022-09-19 05:03:57.215676 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-19 05:03:57.215863 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:57.216049 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/mysql_rds_test.sql
+2022-09-19 05:03:57.216239 (MainThread): 
+2022-09-19 05:03:57.216439 (MainThread): Database Error in model fivetran_mysql2_us_sys_config (models/fivetran_mysql2_us_sys_config.sql)
+2022-09-19 05:03:57.216632 (MainThread):   001003 (42000): SQL compilation error:
+2022-09-19 05:03:57.216814 (MainThread):   syntax error line 2 at position 4 unexpected 'delete'.
+2022-09-19 05:03:57.216996 (MainThread):   compiled SQL at target/run/PROD_US_West_2/models/fivetran_mysql2_us_sys_config.sql
+2022-09-19 05:03:57.217201 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+2022-09-19 05:03:57.217461 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109de6b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109de6ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109de6370>]}
+2022-09-19 05:03:57.217732 (MainThread): Flushing usage events
