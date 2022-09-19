@@ -1,1 +1,0 @@
-delete from FIVETRAN_SOUMYAD.fivetran_mysql2_us_sys.sys_config where _fivetran_deleted = True
