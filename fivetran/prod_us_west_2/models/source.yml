@@ -9,6 +9,6 @@ sources:
   #   tables:      
   #     - name: persons  
       
-  - name: ar_five
+  - name: AR_FIVE
     tables:      
-      - name: ar_five_test  
+      - name: AR_FIVE_TEST
