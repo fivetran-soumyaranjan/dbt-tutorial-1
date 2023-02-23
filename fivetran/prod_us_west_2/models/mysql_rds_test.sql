@@ -1,1 +1,0 @@
-delete from {{ source('mysql_rds_test_soumya', 'persons') }} where _fivetran_deleted = True

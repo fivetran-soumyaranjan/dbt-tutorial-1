@@ -1,1 +1,1 @@
-delete from {{ source('fivetran_mysql2_us_sys', 'sys_config') }} where _fivetran_deleted = True
+select * from {{ source('ar_five', 'ar_five_test') }} where _fivetran_deleted = False
